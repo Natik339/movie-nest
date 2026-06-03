@@ -1,0 +1,381 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    height: 70vh;
+    background-image: url(bg\ \(1\).jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    position: relative;
+
+}
+
+.main .box{
+  position: absolute;
+  top : 0;
+  height: 70vh;
+  width: 100%;
+  opacity: 0.69;
+  background-color: black;
+}
+
+
+nav{
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    max-width:80vw;
+}
+
+nav img{
+    position: relative;
+    z-index:10;
+    width  : 114px
+}
+
+nav button{
+    position: relative;
+    z-index:10;
+}
+
+.sigin{
+    background-color: red;
+    color:white;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 0.3rem;
+    font-weight: 700;
+}
+
+.lang{
+    background-color: transparent;
+    color : white;
+    margin-right : 1rem;
+    width: 6rem;
+    height: 1.7rem;
+    border: 2px solid rgba(255,255,255,0.4);
+    font-size: 1rem;
+}
+
+.lang i{
+    padding-left: 1rem;
+}
+
+
+.hero{
+    /* 100% = 577.91px  nav bar ht = 62px so it will take 577.91-62px */
+    height: 515.91px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color : white;
+    position: relative;
+    z-index: 10;
+    font-family: "Martel Sans", sans-serif;
+    padding: 0px 30px;
+    
+}
+
+.hero .heading{
+    width: 800px;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hero .text1{
+   margin-bottom: 0.5rem;
+   font-size: 24px;
+   text-align: center;
+   font-weight: 400;
+}
+
+
+
+.hero .text2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.login{
+    margin:1rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.start{
+    background-color: red;
+    font-size: 18px;
+    font-weight: 700;
+    color : white;
+    padding:0.8rem 1.5rem;
+    border-radius: 0.3rem;
+}
+
+.login .start i{
+    padding-left: 1rem;
+}
+
+.login input{
+    background-color: transparent;
+    
+    padding:0.8rem 1.5rem;
+    border-radius: 0.3rem;
+    border: 2px solid rgba(255,255,255,0.5);
+}
+
+input::placeholder {
+ font-size: 1rem;
+ font-weight: 500;
+ color : white;
+ 
+}
+
+
+.separation{
+    height: 7px;
+    background-color: rgba(77, 76, 76,0.6);
+}
+
+
+
+/* .first{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+ section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 350px;
+ }
+
+
+ .des{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+ .desHeading{
+    font-weight: 700;
+    font-size : 2.5rem;
+}
+
+ .desText{
+    width: 500px;
+    font-size: 1.2rem;
+    
+}
+
+
+
+.secImg img{
+    width : 450px;
+    height: 350px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video{
+    height: 300px;
+    position: relative;
+    top: -29px;
+    width: 348px;
+    left: -394px;
+}
+
+
+
+
+
+.secLine{
+    height: 2px;
+} */
+
+
+
+.first{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    max-width: 70vw;
+    align-items: center;
+}
+
+.secImg{
+    padding-top: 1rem;
+    position: relative;
+}
+
+
+.secImg img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video{
+    position: absolute;
+    top: 36px;
+    height: 300px;
+    width: 400px;
+    right: 0px;
+}
+
+.des{
+    display: flex;
+    flex-direction: column;
+}
+
+.first .des .desHeading{
+    font-size : 48px;
+    font-weight: bolder;
+}
+
+.first .des .desText{
+    font-size: 24px;
+}
+
+
+
+.faq{
+    padding: 25px;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color:white;
+    font-weight: 500;
+    align-items: center;
+}
+
+.faq h2{
+   font-size: 30px;
+}
+
+
+.question{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    height: 70px;
+    width: 900px;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    background-color: #2d2d2d;
+    border: 2px solid #2d2d2d;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.9;
+    transition: all 0.2s ease-in;
+}
+
+.question i{
+    margin-right: 0.5rem;
+}
+
+.question span{
+    margin : 0.5rem;
+}
+
+
+.question:hover{
+    opacity: 1;
+    background-color: #414141;
+}
+
+.helpLine{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-left: 17rem;
+}
+
+
+.helpLine a{
+     color : #FFFFFFB3;
+}
+
+footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+.footItems{
+    padding-bottom: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footItems a{
+    font-size: 16px;
+    margin-top : 1rem;
+    /* text-decoration: none; */
+    color : #FFFFFFB3;
+}
+
+
+
+.footBtn {
+    margin-bottom: 2rem;
+    margin-left: 17rem;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.net{
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 17rem;
+    /* display: block; */
+    color : #FFFFFFB3;
+    height: 10px;
+    width: 50px;
+}
+
+.copyright{
+    color : #FFFFFFB3;
+    height: 100px;
+    font-size: 16px;
+    margin-left: 17rem;
+    margin-top : 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
